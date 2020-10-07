@@ -1,0 +1,40 @@
+﻿{
+	"methods": {
+		"Compiler_Arrays": {
+			"timeStamp": "2020-10-07T06:18:19.026Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"m_Quit": {
+			"timeStamp": "2020-10-07T06:18:19.028Z"
+		},
+		"initHDI": {
+			"timeStamp": "2020-10-07T06:18:19.027Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"Compiler_Variables_Inter": {
+			"timeStamp": "2020-10-07T06:18:19.027Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"Compiler_Variables": {
+			"timeStamp": "2020-10-07T06:18:19.027Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"Compiler_Methods": {
+			"timeStamp": "2020-10-07T06:18:19.026Z",
+			"attributes": {
+				"invisible": true
+			}
+		},
+		"00_Start": {
+			"timeStamp": "2020-10-07T06:18:19.025Z"
+		}
+	}
+}

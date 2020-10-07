@@ -1,0 +1,340 @@
+﻿{
+	"destination": "detailScreen",
+	"windowMinWidth": 1120,
+	"windowMinHeight": 600,
+	"width": 1120,
+	"height": 800,
+	"menuBar": "Menu Bar #1",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Tab Control": {
+					"type": "tab",
+					"top": 20,
+					"left": 20,
+					"width": 1080,
+					"height": 760,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "TabControl",
+					"dataSourceTypeHint": "arrayText",
+					"labels": [
+						"Info",
+						"Sample 1",
+						"Sample 2",
+						"Sample 3",
+						"Sample 4",
+						"Important note"
+					],
+					"action": "GotoPage",
+					"events": [
+						"onClick"
+					]
+				},
+				"rb_frame": {
+					"type": "rectangle",
+					"top": 370,
+					"left": 720,
+					"width": 360,
+					"height": 352,
+					"fill": "#F5F5F5",
+					"stroke": "#c0c0c0"
+				},
+				"btnTrace": {
+					"type": "checkbox",
+					"top": 741,
+					"left": 780,
+					"width": 183,
+					"height": 22,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "Form:C1466.trace",
+					"text": "Trace code",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"btnHtml": {
+					"type": "button",
+					"top": 740,
+					"left": 40,
+					"width": 180,
+					"height": 20,
+					"sizingY": "move",
+					"text": "Export to HTML",
+					"focusable": false,
+					"method": "ObjectMethods/btnHtml.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"WParea": {
+					"type": "write",
+					"top": 370,
+					"left": 40,
+					"width": 660,
+					"height": 350,
+					"sizingX": "fixed",
+					"sizingY": "fixed",
+					"dataSource": "WParea",
+					"hideFocusRing": true,
+					"scrollbarVertical": "automatic",
+					"scrollbarHorizontal": "automatic",
+					"zoom": 100,
+					"showPageFrames": false,
+					"events": [
+						"onClick",
+						"onDoubleClick"
+					],
+					"showHiddenChars": false,
+					"showVerticalRuler": false,
+					"showHeaders": false,
+					"showFooters": false
+				},
+				"Line": {
+					"type": "line",
+					"top": -10,
+					"left": 560,
+					"width": 0,
+					"height": 872,
+					"visibility": "hidden",
+					"strokeDashArray": [
+						3,
+						5
+					],
+					"stroke": "#9400d3"
+				},
+				"rb1": {
+					"type": "radio",
+					"text": "First point or comma",
+					"top": 453,
+					"left": 770,
+					"width": 292,
+					"height": 21,
+					"events": [
+						"onClick"
+					],
+					"sizingX": "fixed",
+					"method": "ObjectMethods/rb1.4dm",
+					"dataSource": "Form:C1466.rb1",
+					"radioGroup": "SelectChar",
+					"focusable": false
+				},
+				"rb2": {
+					"type": "radio",
+					"text": "Always based on point",
+					"top": 484,
+					"left": 770,
+					"width": 292,
+					"height": 21,
+					"events": [
+						"onClick"
+					],
+					"sizingX": "fixed",
+					"method": "ObjectMethods/rb2.4dm",
+					"dataSource": "Form:C1466.rb2",
+					"radioGroup": "SelectChar",
+					"focusable": false
+				},
+				"rb3": {
+					"type": "radio",
+					"text": "Always based on comma",
+					"top": 515,
+					"left": 770,
+					"width": 292,
+					"height": 21,
+					"events": [
+						"onClick"
+					],
+					"sizingX": "fixed",
+					"method": "ObjectMethods/rb3.4dm",
+					"dataSource": "Form:C1466.rb3",
+					"radioGroup": "SelectChar",
+					"focusable": false
+				},
+				"rb4": {
+					"type": "radio",
+					"text": "Based on system settings",
+					"top": 546,
+					"left": 770,
+					"width": 292,
+					"height": 21,
+					"events": [
+						"onClick"
+					],
+					"sizingX": "fixed",
+					"method": "ObjectMethods/rb4.4dm",
+					"dataSource": "Form:C1466.rb4",
+					"radioGroup": "SelectChar",
+					"focusable": false
+				},
+				"rb_comments": {
+					"type": "text",
+					"text": "Select an option for decimal tabulation",
+					"top": 390,
+					"left": 751,
+					"width": 275,
+					"height": 16,
+					"sizingX": "fixed",
+					"fontWeight": "bold"
+				},
+				"WParea1": {
+					"type": "write",
+					"top": 68,
+					"left": 40,
+					"width": 1040,
+					"height": 280,
+					"sizingX": "fixed",
+					"sizingY": "fixed",
+					"dataSource": "WPcomments",
+					"hideFocusRing": true,
+					"scrollbarVertical": "automatic",
+					"scrollbarHorizontal": "automatic",
+					"zoom": 100,
+					"showPageFrames": false,
+					"events": [],
+					"showHiddenChars": false,
+					"showVerticalRuler": false,
+					"showHeaders": false,
+					"showFooters": false,
+					"showBackground": true,
+					"showHorizontalRuler": false,
+					"layoutMode": "embedded",
+					"enterable": false,
+					"focusable": false,
+					"borderStyle": "none",
+					"contextMenu": "none"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Button": {
+					"type": "button",
+					"top": 741,
+					"left": 980,
+					"width": 100,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"text": "Demo",
+					"focusable": false,
+					"method": "ObjectMethods/Button.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text10": {
+					"type": "text",
+					"top": 390,
+					"left": 160,
+					"width": 580,
+					"height": 90,
+					"textAlign": "left",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 20,
+					"text": "Comma? Point?\rDeciding which character should be considered as the decimal separator is not as obvious as it may seem at first glance.",
+					"sizingX": "grow"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 495,
+					"left": 120,
+					"width": 840,
+					"height": 140,
+					"sizingX": "grow",
+					"textAlign": "right",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 20,
+					"text": "Should it be based on system settings?\rOr should it always be a point or a comma?\rOr should it be the first point or comma found from the right?\rWhat if there are mixed formats in an international document?\rWhat if some numbers have decimals and others don't?",
+					"sizingY": "fixed"
+				},
+				"Static Picture1": {
+					"type": "picture",
+					"top": 70,
+					"left": 317,
+					"width": 486,
+					"height": 288,
+					"picture": "Images/Static Picture2.png"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 650,
+					"left": 160,
+					"width": 840,
+					"height": 90,
+					"textAlign": "left",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 20,
+					"text": "See? It's not that easy!\rLet's take a closer look…",
+					"sizingX": "grow"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Button4": {
+					"type": "button",
+					"text": "BLOG sample",
+					"top": 810,
+					"left": 948,
+					"width": 174,
+					"height": 26,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button4.4dm",
+					"sizingX": "move",
+					"sizingY": "move"
+				}
+			}
+		},
+		null,
+		null,
+		null,
+		null
+	],
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"geometryStamp": 504,
+	"editor": {
+		"activeView": "Page0",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"Page0": {
+				"objects": [
+					"Tab Control",
+					"rb_frame",
+					"btnTrace",
+					"btnHtml",
+					"WParea",
+					"Line",
+					"rb1",
+					"rb2",
+					"rb3",
+					"rb4",
+					"rb_comments",
+					"WParea1"
+				]
+			}
+		}
+	}
+}
